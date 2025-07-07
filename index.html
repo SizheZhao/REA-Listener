@@ -1,17 +1,425 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
-  <script type="module" crossorigin src="./js/index-CWtPT1a8.js"></script>
-  <link rel="stylesheet" crossorigin href="./css/index-BsZQoQI8.css">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="REA-Listener">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REA-Listener: Real-Time Listening Head Generation with Dynamic Emotion Modeling and Flexible Modality Adaptation</title>
+
+
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
-
 <body>
-  <div id="app"></div>
-</body>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">REA-Listener</h1>
+          <h1 class="title is-3 publication-title">Real-Time Listening Head Generation with Dynamic Emotion Modeling and Flexible Modality Adaptation</h1>
+          <h3 class="title is-4 conference-authors"><a target="_blank" href="">ACM MM 2025</a></h3>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="">Sizhe Zhao</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Chenyang Wang</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Weiyu Zhao</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Zonglin Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Ming Li</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="">Shengping Zhang</a><sup>1✉</sup>
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Harbin Institute of Technology&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Shandong Inspur Database Technology Co., Ltd.</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>These authors contributed equally to this work&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>✉</sup>Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+            <!-- Arxiv Link. -->
+            <span class="link-block">
+              <a target="_blank" href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>ArXiv</span>
+              </a>
+            </span>
+
+
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a target="_blank" href=""
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+                </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Motivation. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <video id="teaser"controls autoplay muted height="60%" width="60%">
+            <source src="video/motivation.mp4"
+                    type="video/mp4">
+          </video>
+          </br>
+        </div>
+        <br>
+        <h2 class="subtitle has-text-centered">
+        <!-- span class="dperact">REA-Listener</span> achieves <b>real-time</b> listening head generation with <b>dynamic emotion modeling</b> and <b>flexible modality adaptation</b>.-->
+        </h2>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <!-- <video id="teaser" autoplay muted loop height="60%" width="60%">
+            <source src="media/videos/teaser.mp4"
+                    type="video/mp4">
+          </video> -->
+          <img src="img/teaser.png" style="max-width: 60%;">
+          </br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" >
+  <div class="container is-max-desktop" >
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered" >
+      <div class="column is-two-thirds">
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified" >
+          <p>
+            Listening head generation aims to synthesize realistic and responsive non-verbal listener head motions that respond to speakers in conversational scenarios. 
+            Existing methods typically rely on fixed audio-visual input modalities and predefined emotion labels, limiting their adaptability and expressiveness in real-world scenarios. 
+            In this paper, we propose a novel real-time framework, REA-Listener, to generate high-fidelity listening head videos with flexible modality adaptation and dynamic emotion modeling. 
+            Specifically, we first propose a Modality-Adaptive Mixture of Experts (MA-MoE) module to encode arbitrary combinations of speaker audio and visual signals into a unified embedding space, ensuring robustness under partial modality conditions. 
+            To further enhance the temporal consistency of listener emotion, we present a lightweight emotional head dynamics generator with a multi-modal emotion predictor, which infers listener emotions dynamically from speaker context alongside head motion coefficient prediction. 
+            Finally, we employ a 3D-aware renderer based on 3D Gaussian Splatting to produce high-quality listener head videos in real time. With these components, our approach achieves efficient head motion generation at 30fps on a single NVIDIA RTX 3090 GPU, supporting real-time interaction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-quarters">
+        <h2 class="title is-3">Framework</h2>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+  <div class="container is-fullhd">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered  is-centered">
+          <!-- <video id="teaser" autoplay muted loop height="60%" width="60%">
+            <source src="media/videos/teaser.mp4"
+                    type="video/mp4">
+          </video> -->
+          <img src="img/overview_003_00.png" style="max-width: 60%;">
+          </br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixes">
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Overview of REA-Listener. 
+            Given the reference identity and an arbitrary combination of speaker audio-visual inputs, 
+            (a) Modality-adaptive Mixture-of-Experts encodes cues from speaker into a unified embedding space. 
+            Then, (b) Emotional Head Dynamics Generator dynamically predicts the emotion of the listener and generates the respondence motion to the speaker. 
+            Finally, REA-Listener adopts the (c) 3D-aware Rendering module to synthesize realistic listening head videos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixes">
+        <h2 class="title is-4">Comparison with State-of-the-art Methods</h2>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 60%; margin: 0 auto;">
+        <div class="item">
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_9pUMBsfsJho_000012_000022.1.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_bPiofmZGb8o_002969_002986.1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_D8K1AAxkg0g_27880_28264.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_EMVL3jo83OQ_6592_6976.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_JohCZ6VlC70_000499_000507.0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/comparison/0_z5x1Nx2eiuQ_000111_000142.0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixes">
+        <h2 class="title is-4">Performance with Arbitrary Modality Inputs</h2>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 60%; margin: 0 auto;">
+        <div class="item">
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/modality/0_9pUMBsfsJho_000003_000010.0.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/modality/0_bPiofmZGb8o_002969_002986.1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/modality/0_UCA1A5GqCdQ_004221_004229.0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixes">
+        <h2 class="title is-4">Performance with different emotions</h2>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 60%; margin: 0 auto;">
+        <div class="item">
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/emotion/1vkXIVT1kIk_000000_000007.1.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/emotion/9pUMBsfsJho_000012_000022.1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/emotion/UCA1A5GqCdQ_000353_000361.0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixes">
+        <h2 class="title is-4">Stylized Listeners</h2>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 60%; margin: 0 auto;">
+        <div class="item">
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/style/ood1.mp4" 
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/style/ood2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item" >
+          <video poster="" controls muted style="height: 100%;">
+            <source src="video/style/ood3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{zhaowang2025realistener,
+          title={REA-Listener: Real-Time Listening Head Generation with Dynamic Emotion Modeling and Flexible Modality Adaptation},
+          author={Zhao, Sizhe and Wang, Chenyang and Zhao, Weiyu and Li, Zonglin and Li, Ming and Zhang, Shengping},
+          booktitle={Proceedings of the 33th ACM International Conference on Multimedia}
+          year={2025}
+        }
+        </code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://peract.github.io/">PerAct</a>, and <a href="https://voxposer.github.io/">VoxPoser</a></a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
 </html>
